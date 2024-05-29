@@ -44,8 +44,8 @@ jobs:
       id: build-image
       env:
         REGISTRY: ${{ steps.login-ecr-public.outputs.registry }}
-        REGISTRY_ALIAS: xxxxxx # 본인의 alias 입력
-        REPOSITORY: xxxxxx # 본인의 repository명 입력
+        REGISTRY_ALIAS: d0v2k3o3 # 본인의 alias 입력
+        REPOSITORY: acckwu_chunsoo # 본인의 repository명 입력
         IMAGE_TAG: ${{ github.sha }}
       run: |
         # Build a docker container and
